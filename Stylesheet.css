@@ -1,0 +1,216 @@
+body{
+    margin: 0;
+    height: 100%;
+}
+.header{
+    padding: 15px 0;
+    background-color:#ece5e5 ;
+}
+.header-content{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+/* border: 1px solid green; */
+}
+.logo-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 0px solid green;
+    width: 80%;
+}
+
+.emp-text{
+    font: normal normal bold 15px/20px Montserrat;
+    font-family: "Montserrat",sans-serif;
+    letter-spacing: 0px;
+    color: #82a70c;
+    text-transform: capitalize;
+
+}
+.emp-payroll{
+    color: black;
+}
+.text-div{
+    display: flex;
+    flex-direction: column;
+}
+.form-content{
+    min-height: calc(100%-80px);
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid green;
+    align-items: center;}
+.form{
+    width: 65%;
+    padding: 44px 60px;
+    background: #ffff 0% 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029 ;
+    background-color: rgb(252, 252, 252);
+   border-radius: 8px;
+   opacity: 1;
+}
+.form-head{
+    font: normal normal bold 24px/37px Roboto;
+    letter-spacing: 0px;
+    color: #55616d;
+    text-transform: capitalize;
+    opacity: 1;
+    padding-bottom: 20px;
+}
+.row-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    margin-bottom: 10px;
+    border: 0px solid #82a70c;
+}
+.text{
+    font-size: 16px;
+    color: gray;
+    opacity: 1;
+    font-family: Roboto;
+}
+.lable{
+min-width: 120px; 
+}
+.input{
+   width: 100%;
+   padding: 12px;
+   border: 1px solid #ccc;
+   border-radius: 6px;
+   resize: vertical;
+}
+.profile-radio-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-radio-content>label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.profile-radio-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.profile-radio-content>label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 12px;
+}
+
+
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font: normal normal normal 16px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    background-color: transparent;
+}
+
+.buttonParent {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button {
+    font-size: 20px;
+    font-family: Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    opacity: 1;
+    background-color: #f5f5f5;
+    font-weight: 400;
+    min-width: 140px;
+    padding: 7px 7px;
+    border: 1px solid rgba(204, 204, 204, 0.089);
+    border-radius: 3px;
+    cursor: default;
+}
+
+.submitButton {
+    border: none;
+    background-color: #f5f5f5;
+    margin-right: 30px;
+}
+
+.cancelButton {
+    text-decoration: none;
+    text-align: center;
+}
+
+@media only screen and (max-width:960px) {
+    .cancelButton {
+        margin-left: 0px;
+
+    }
+
+    .form {
+        width: 85%;
+        padding: 44px 20px;
+    }
+
+    @media only screen and(max-width:600px) {
+        .form {
+            margin-top: 10px;
+
+        }
+
+        .row-content {
+            flex-direction: column;
+        }
+        .uploadButton{
+            justify-content: column;
+        }
+
+        .profile-radio-content {
+            flex-flow: wrap;
+        }
+
+        .submit-reset {
+            width: 100%;
+            display: flex;
+            flex-grow: 1;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .submitButton {
+            margin: 0;
+        }
+
+        .buttonParent {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
+    }
+}
